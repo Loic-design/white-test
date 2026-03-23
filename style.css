@@ -23,6 +23,7 @@ header{
     position: relative;
 }
 
+
 header::before{
     content: "";
     position: absolute;
@@ -38,6 +39,17 @@ video{
     object-position: center;
     display: block;
     z-index: -1;
+}
+
+.txt-header{
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    color: #fff;
+    font-size: 20px;
 }
 
 nav{
@@ -104,17 +116,26 @@ h3{
     margin: 0;
 }
 
-/* footer  */
-.txt-footer{
-    height: 100vh;
-    position: absolute;
-    display: flex;
+.card{
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between; */
+    font-size: 18px;
     padding: 30px;
-    color: #fff;
-    font-size: 20px;
+    background-color: #f3f5f9;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    margin-bottom: 15px;
+
 }
+
+.line{
+    border: 2px solid gray;
+    width: 20%;
+    margin-bottom: 10px;
+}
+
+/* footer  */
 
 footer{
     position: fixed;
@@ -164,5 +185,9 @@ img[alt="footer-logo"]{
     .burger{
         display: none;
     }
+
 }
 
+/* header.scolled{
+    background-color: #fff;
+} */
